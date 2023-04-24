@@ -1,2 +1,2 @@
-# React + Redux + SASS
+# React + Redux + SСSS
 Онлайн магазин
