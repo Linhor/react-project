@@ -1,1 +1,2 @@
-# react-project
+# React + Redux + SASS
+Онлайн магазин
