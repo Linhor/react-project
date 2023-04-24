@@ -1,0 +1,28 @@
+.openCard {
+  background-image: url('../../components/assets/images/deepcard/image 1.png');
+  overflow: hidden;
+
+  &-wrap {
+    @include flex(25px, column);
+    padding-top: 56px;
+    max-width: 1360px;
+    height: calc(100vh - 56px);
+    margin: 0 auto;
+  }
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+
+    &_rblock {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      p {
+        width: 114px;
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  }
+  
+  main {
+  background-color: #161516;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  color: #FFFFFF;
+  overflow:auto;
+  }
+  
+  .header{
+  padding-top: 54px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  height: 70px;
+  width: inherit;
+  background-color: #161516;
+  top: 0;
+  }
+  
+  .header__title {
+    @include title-text;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  
+  .box {
+  display:flex;
+  align-items:center;
+  gap:20px;
+  }
+  
+  .box p {
+   width: 151px;
+   text-align: end;
+  }
+  .cart{
+  width: 50px;
+  height: 50px;
+  background-image: url('../../components/assets/images/Group\ 71.svg');
+  }
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap:35px 20px;
+    margin-top: 40px;
+  }

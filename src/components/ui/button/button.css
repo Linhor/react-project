@@ -1,0 +1,11 @@
+button {
+  width: 200px;
+  height: 42px;
+  background-color: rgba(213, 140, 81, 1);
+  color: rgba(19, 19, 19, 1);
+  border: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}

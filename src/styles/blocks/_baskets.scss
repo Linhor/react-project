@@ -1,0 +1,73 @@
+.containerCart {
+  max-width: 797px;
+  margin: 0 auto;
+}
+
+.openCart {
+  @include flex(63px, column);
+  margin: 0 auto;
+  background-color: #161516;
+  top: 0;
+  left: 0;
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  header {
+    max-width: 1440px;
+    padding-top: 70px;
+    display: flex;
+    gap: 276px;
+    top: 0;
+    position: sticky;
+    height: 70px;
+    background-color: #161516;
+  }
+
+  &__btn {
+    background-image: url('../../components/assets/images/Group\ 64.svg');
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__list-wrap {
+    min-height: calc(100vh - 286px);
+  }
+
+  &__list {
+    padding-bottom: 102px;
+  }
+
+  &__block {
+    border-top: #D58C51 1px solid;
+
+    .container {
+      max-width: 1440px;
+      height: auto;
+    }
+  }
+
+  &__push {
+    background-color: #161516;
+    position: sticky;
+    bottom: 0;
+    z-index: 333;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

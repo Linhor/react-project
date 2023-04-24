@@ -1,0 +1,188 @@
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid;
+  border-color: #D58C51;
+  width: 301px;
+  height: 552px;
+  padding-left: 21px;
+  padding-top: 43px;
+  padding-right: 21px;
+
+  :hover p {
+    color: #D58C51;
+  }
+
+  :hover h3 {
+    color: #D58C51;
+  }
+
+  .pic {
+    width: 270px;
+    height: 271px;
+  }
+
+  &__title {
+    color: #FFFFFF;
+    flex: 1;
+  }
+
+  &__desc {
+    @include desc-text;
+  }
+
+  &__footer {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+
+    p {
+      @include regular-text(17px,500,21px);
+    }
+
+    span {
+      @include desc-text;
+      vertical-align: sub;
+    }
+
+  }
+
+  .add {
+    background-image: url('../../components/assets/images/Group\ 69.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+
+  .add:hover {
+    background-image: url('../../components/assets/images/Group\ 68.svg');
+  }
+
+  .del {
+    display: none;
+  }
+
+  .card__count {
+    display: none;
+  }
+
+  .deepCard-rblock {
+    display: none;
+  }
+}
+
+
+.toCart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 31px;
+  gap: 27px;
+
+  img {
+    width: 122px;
+    height: 122px;
+  }
+
+  .card__footer {
+    margin-top: unset;
+  }
+
+  .del {
+    display: block;
+    background-image: url('../../components/assets/images/Group\ 182.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+
+  .card__count {
+    display: block;
+    text-align: center;
+  }
+
+  .card_count-btn {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+
+  .deepCard-rblock {
+    display: none;
+  }
+}
+
+
+.deepCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 40px;
+
+  .card__title,
+  .card_desc,
+  .fulldesc,
+  .card__footer,
+  .card__count {
+    display: none;
+  }
+
+  img {
+    width: 501px;
+    height: 503px;
+  }
+
+  .del {
+    display: block;
+    background-image: url('../../components/assets/images/Group\ 182.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+
+  .card_count-btn {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+
+  &-rblock {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 34px;
+
+    &__title {
+      @include title-text;
+    }
+
+    &__fulldesc {
+      @include desc-text;
+      max-width: 528px;
+    }
+
+    &__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+      p{
+        @include regular-text(18px, 400, 22px);
+      }
+
+    }
+
+  }
+
+  .add {
+   color: black;
+  }
+  .added {
+  background-color: #744016;
+  }
+}

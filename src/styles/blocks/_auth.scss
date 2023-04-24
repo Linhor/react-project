@@ -1,0 +1,94 @@
+.auth {
+  background-image: url('../../components/assets/images/auth/Rectangle\ 3.png'), url('../../components/assets/images/auth/Mask\ Group.png');
+  mix-blend-mode: multiply;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  padding-top: 348px;
+
+  .container {
+    max-height: calc(100vh - 348px);
+  }
+
+  &__reg {
+    @include regular-text(11px, 300, 13px);
+    text-align: right;
+    text-decoration-line: underline;
+    color: #D58C51;
+    margin-right: 19px;
+  }
+
+  &-form {
+    @include flex(9px, column);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &_wrap {
+      @include flex(18px, column);
+      background-color: #FFFFFF;
+      max-width: 460px;
+      min-height: 340px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__title {
+      @include title-text;
+      text-transform: uppercase;
+      color: #161516;
+      margin: 0 auto;
+      margin-top: -8px
+    }
+
+    input {
+      border: 1px solid #D58C51;
+      border-radius: 61px;
+      height: 39px;
+      padding-left: 18px;
+      font-size: 16px;
+
+      &::placeholder {
+        @include regular-text(16px,400,20px);
+        color: #161516;
+      }
+    }
+
+    .agree {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #D58C51;
+    }
+
+    label {
+      @include regular-text(11px,300,13px);
+      color: #301411;
+      display: flex;
+      align-items: center;
+    }
+
+
+  }
+
+  button {
+    @include desc-text;
+    margin: 0 auto;
+    margin-top: -10px;
+    color: #131313;
+  }
+
+  .reg-btn {
+    cursor: pointer;
+  }
+
+  .reg-btn:disabled {
+    cursor: not-allowed;
+  }
+
+  .warn {
+    @include regular-text(8px,300,10px);
+    color: #FF0B0B;
+    text-align: center;
+    opacity: 0;
+  }
+
+}

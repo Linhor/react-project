@@ -1,0 +1,48 @@
+@mixin title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #D58C51;
+}
+
+@mixin title-text {
+  font: {
+    family: 'Montserrat';
+    style: normal;
+    weight: 700;
+    size: 30px;
+  }
+  color: #D58C51;
+  line-height: 37px;
+}
+
+
+@mixin desc-text {
+  font: {
+    family: 'Montserrat';
+    style: normal;
+    weight: 400;
+    size: 14px;
+  }
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+@mixin regular-text($s, $w, $lh) {
+  font: {
+    family: 'Montserrat';
+    style: normal;
+    weight: $w;
+    size: $s;
+  }
+  line-height: $lh;
+}
+
+@mixin flex($g,$fd){
+display: flex;
+gap:$g;
+flex-direction:$fd;
+
+}
